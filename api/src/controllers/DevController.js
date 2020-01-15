@@ -40,10 +40,27 @@ module.exports = {
     return response.json(dev);
   },
 
-  async update() {
-    //todo
+  async update(request, response) {
+    let { github_username } = request.params;
+
+    const filter = { github_username };
+    const update = request.body;
+
+    let dev = await Dev.findOneAndUpdate(filter, update);
+
+    if (dev === null) dev = { status: "404", msg: "User not found" };
+
+    return await response.json(dev);
   },
-  async destroy() {
-    // todo
+
+  async destroy(request, response) {
+    let { github_username } = request.params;
+
+    let dev = await Dev.findOneAndDelete({ github_username });
+
+    if (dev === null) dev = { status: "404", msg: "User not found" };
+
+    return await response.json(dev);
   }
 };
+
