@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"),
+    url("./assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Roboto"), local("Roboto-Bold"),
+    url("./assets/fonts/Roboto-Bold.ttf");
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: #e5e6f0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+button {
+  font-family: Roboto, sans-serif;
+}
