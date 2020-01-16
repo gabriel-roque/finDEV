@@ -7,7 +7,9 @@ const app = express();
 
 mongoose.connect("mongodb://localhost:27017/findev", {
   useNewUrlParser: true,
-  useUnifiedTopology: true
+  useUnifiedTopology: true,
+  useFindAndModify: true,
+  useCreateIndex: true
 });
 
 app.use(cors());
