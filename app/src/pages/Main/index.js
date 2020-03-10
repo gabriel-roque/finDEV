@@ -1,25 +1,21 @@
-import React, { useEffect, useState } from "react";
-import {
-  StyleSheet,
-  Image,
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity
-} from "react-native";
-import MapView, { Marker, Callout } from "react-native-maps";
+import React, { useEffect, useState } from 'react';
+import { Image, View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { styles } from './styles';
+
+import MapView, { Marker, Callout } from 'react-native-maps';
 import {
   requestPermissionsAsync,
   getCurrentPositionAsync
-} from "expo-location";
-import { MaterialIcons } from "@expo/vector-icons";
-import api from "../services/api";
-import { connect, disconnect, subscribeNewDevs } from "../services/socket";
+} from 'expo-location';
+import { MaterialIcons } from '@expo/vector-icons';
+
+import { connect, disconnect, subscribeNewDevs } from '../../services/socket';
+import api from '../../services/api';
 
 export default function Main({ navigation }) {
   const [devs, setDevs] = useState([]);
   const [currentRegion, setCurrentRegion] = useState(null);
-  const [techs, setTechs] = useState("");
+  const [techs, setTechs] = useState('');
 
   useEffect(() => {
     async function loadInitialPosition() {
@@ -58,7 +54,7 @@ export default function Main({ navigation }) {
   async function loadDevs() {
     const { latitude, longitude } = currentRegion;
 
-    const response = await api.get("/search", {
+    const response = await api.get('/search', {
       params: {
         latitude,
         longitude,
@@ -102,7 +98,7 @@ export default function Main({ navigation }) {
             <Callout
               onPress={() => {
                 // React navigation
-                navigation.navigate("Profile", {
+                navigation.navigate('Profile', {
                   github_username: dev.github_username
                 });
               }}
@@ -110,7 +106,7 @@ export default function Main({ navigation }) {
               <View style={styles.callout}>
                 <Text style={styles.devName}>{dev.name}</Text>
                 <Text style={styles.devBio}>{dev.bio}</Text>
-                <Text style={styles.devTechs}>{dev.techs.join(", ")}</Text>
+                <Text style={styles.devTechs}>{dev.techs.join(', ')}</Text>
               </View>
             </Callout>
           </Marker>
@@ -129,82 +125,15 @@ export default function Main({ navigation }) {
         <TouchableOpacity onPress={() => loadDevs()} style={styles.loadButton}>
           <MaterialIcons name="my-location" size={20} color="#FFF" />
         </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate('Register');
+          }}
+          style={styles.loadButton}
+        >
+          <Text style={styles.plus}>+</Text>
+        </TouchableOpacity>
       </View>
     </>
   );
 }
-
-const styles = StyleSheet.create({
-  map: {
-    flex: 1
-  },
-
-  avatar: {
-    width: 40,
-    height: 40,
-    borderRadius: 50,
-    borderWidth: 4,
-    borderColor: "#7D40E7"
-  },
-
-  callout: {
-    width: 260
-  },
-
-  devName: {
-    fontWeight: "bold",
-    fontSize: 16
-  },
-
-  devBio: {
-    color: "#666",
-    marginTop: 5
-  },
-
-  devTechs: {
-    marginTop: 5
-  },
-
-  searchForm: {
-    position: "absolute",
-    top: 20,
-    left: 20,
-    right: 20,
-    zIndex: 5,
-    flexDirection: "row"
-  },
-
-  searchInput: {
-    flex: 1,
-    height: 50,
-    backgroundColor: "#FFF",
-    color: "#333",
-    borderRadius: 25,
-    paddingHorizontal: 20,
-    fontSize: 16,
-    shadowColor: "#000",
-    shadowOpacity: 0.2,
-    shadowOffset: {
-      width: 4,
-      height: 4
-    },
-    elevation: 3
-  },
-
-  loadButton: {
-    width: 50,
-    height: 50,
-    backgroundColor: "#8E4DFF",
-    borderRadius: 25,
-    justifyContent: "center",
-    alignItems: "center",
-    marginLeft: 15,
-    shadowColor: "#000",
-    shadowOpacity: 0.2,
-    shadowOffset: {
-      width: 4,
-      height: 4
-    },
-    elevation: 3
-  }
-});

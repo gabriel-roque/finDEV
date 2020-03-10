@@ -1,8 +1,9 @@
-import { createAppContainer } from "react-navigation";
-import { createStackNavigator } from "react-navigation-stack";
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 
-import Main from "./pages/Main";
-import Profile from "./pages/Profile";
+import Main from './pages/Main';
+import Profile from './pages/Profile';
+import Register from './pages/Register';
 
 const Routes = createAppContainer(
   createStackNavigator(
@@ -10,21 +11,27 @@ const Routes = createAppContainer(
       Main: {
         screen: Main,
         navigationOptions: {
-          title: "finDEV"
+          title: 'Search Dev'
         }
       },
       Profile: {
         screen: Profile,
         navigationOptions: {
-          title: "Profile Github"
+          title: 'Profile Github'
+        }
+      },
+      Register: {
+        screen: Register,
+        navigationOptions: {
+          title: 'Register Dev'
         }
       }
     },
     {
       defaultNavigationOptions: {
-        headerTintColor: "#FFF",
+        headerTintColor: '#FFF',
         headerStyle: {
-          backgroundColor: "#7D40E7"
+          backgroundColor: '#7D40E7'
         }
       }
     }
