@@ -30,7 +30,7 @@ $ git clone https://github.com/gabriel-roque/finDEV/
 
 ## :wrench: Configure API and MongoDB
 
-```
+```sh
 $ cd api && npm i
 $ mongod
 $ npm run dev
@@ -38,14 +38,14 @@ $ npm run dev
 
 ## :computer: Configure WebApp
 
-```
+```sh
 $ cd web && npm i
 $ npm start
 ```
 
 ## :iphone: Configure MobileApp
 
-```
+```sh
 $ cd app && npm i
 $ expo start
 ```
