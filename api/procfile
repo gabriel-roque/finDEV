@@ -1,1 +1,0 @@
-web: node workspace api src/index.js

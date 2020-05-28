@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="github/finDEV-logo.jpg" width="650"/>
+  <img src="src/assets/github/finDEV-logo.jpg" width="650"/>
 </p>
 
 <p align="center">
@@ -12,15 +12,15 @@
 
 <hr>
 
-## :bulb: Introduction 
+## :bulb: Introduction
 
 Find your best developer in your region! Search by region and techs.
 
 ## :memo: Minimal Requirements
 
-* NodeJs 12.x
-* Expo 36.x
-* MongoDB 4.2.2
+- NodeJs 12.x
+- Expo 36.x
+- MongoDB 4.2.2
 
 ## 🚀 Install
 
@@ -56,16 +56,15 @@ $ expo start
 
 ## 👤 Authors
 
-| Gabriel Roque |
-| ------------- |
-| <img src="https://avatars2.githubusercontent.com/u/32438220?s=460&v=4" width="110">  |
-| <a href="https://github.com/gabriel-roque">Github</a>  |
-| <a href="https://www.linkedin.com/in/gabriel-roque/">Linkedin</a> |
-
+| Gabriel Roque                                                                       |
+| ----------------------------------------------------------------------------------- |
+| <img src="https://avatars2.githubusercontent.com/u/32438220?s=460&v=4" width="110"> |
+| <a href="https://github.com/gabriel-roque">Github</a>                               |
+| <a href="https://www.linkedin.com/in/gabriel-roque/">Linkedin</a>                   |
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/gabriel-roque/finDEV/issues). 
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/gabriel-roque/finDEV/issues).
 
 ## Show your support
 
