@@ -1,7 +1,7 @@
 <span id="top"></span>
 
 <p align="center">
-  <img src="src/assets/github/finDEV-logo.jpg" width="650"/>
+  <img src="src/assets/github/finDEV-logo.jpg" />
 </p>
 
 <p align="center">
@@ -9,6 +9,14 @@
 <a href="https://pt-br.reactjs.org/"><img src="https://img.shields.io/badge/ReactJS-16.x-blue"></a>
   <a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/Node-12.x-green"></a>
   <a href="https://www.npmjs.com/"><img src="https://img.shields.io/badge/NPM-6.x-red"></a>
+</p>
+
+
+
+<p align="center">
+   <a href="https://findev.netlify.app/"><img src="https://raw.githubusercontent.com/gabriel-roque/design/master/btn-open-app.png" width="200"></a>
+    <a href="https://github.com/gabriel-roque/finDEV-api"><img src="https://raw.githubusercontent.com/gabriel-roque/design/master/btn-back-end.png" width="200"></a>
+  <a href="https://github.com/gabriel-roque/finDEV-app"><img src="https://raw.githubusercontent.com/gabriel-roque/design/master/btn-mobile.png" width="200"></a>
 </p>
 
 <hr>
