@@ -1,58 +1,42 @@
+<span id="top"></span>
+
 <p align="center">
   <img src="src/assets/github/finDEV-logo.jpg" width="650"/>
 </p>
 
 <p align="center">
-  <a href="https://pt-br.reactjs.org/"><img src="https://img.shields.io/badge/ReactJS-16.x-blue"></a>
+ <a href="https://app.netlify.com/sites/findev/deploys"><img src="https://api.netlify.com/api/v1/badges/9a800427-a77c-419b-8350-c7de56f534ae/deploy-status"></a> 
+<a href="https://pt-br.reactjs.org/"><img src="https://img.shields.io/badge/ReactJS-16.x-blue"></a>
   <a href="https://nodejs.org/en/"><img src="https://img.shields.io/badge/Node-12.x-green"></a>
   <a href="https://www.npmjs.com/"><img src="https://img.shields.io/badge/NPM-6.x-red"></a>
-  <a href="https://www.mongodb.com/"><img src="https://img.shields.io/badge/MongoDB-4.x-green"></a>
-  <a href="https://expo.io/"><img src="https://img.shields.io/badge/Expo-36.x-blue"></a>
 </p>
 
 <hr>
 
-## :bulb: Introduction
+## 💡 Introduction
 
 Find your best developer in your region! Search by region and techs.
 
-## :memo: Minimal Requirements
+## 📝 Minimal Requirements
 
 - NodeJs 12.x
-- Expo 36.x
-- MongoDB 4.2.2
 
 ## 🚀 Install
 
-```
+```sh
 $ git clone https://github.com/gabriel-roque/finDEV/
 ```
 
-## :wrench: Configure API and MongoDB
+## 📝 Configure WebApp
 
 ```sh
-$ cd api && npm i
-$ mongod
-$ npm run dev
-```
-
-## :computer: Configure WebApp
-
-```sh
-$ cd web && npm i
+$ cp .env.example .env
 $ npm start
 ```
 
-## :iphone: Configure MobileApp
+> Check in **development** at http://localhost:3000/
 
-```sh
-$ cd app && npm i
-$ expo start
-```
-
-> Check **web-app** in http://localhost:3000/
-
-> Check **api** in http://localhost:3333/devs
+> Check in **production** at https://findev.netlify.app/
 
 ## 👤 Authors
 
@@ -69,3 +53,9 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
+
+[🔝 back to top](#top)
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/gabriel-roque/design/master/logo-gabriel-roque.png" width="200"/>
+</p>
