@@ -28,6 +28,7 @@ Find your best developer in your region! Search by region and techs.
 ## 📝 Minimal Requirements
 
 - NodeJs 12.x
+- Npm 6.0.x
 
 ## 🚀 Install
 
