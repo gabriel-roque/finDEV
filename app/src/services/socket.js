@@ -1,11 +1,11 @@
-import socketio from 'socket.io-client'
+import socketio from 'socket.io-client';
 
-const socket = socketio('http://192.168.25.231:3333', {
+const socket = socketio('http://10.0.0.110:3333', {
   autoConnect: false,
-})
+});
 
 function subscribeNewDevs(subcribeFunction) {
-  socket.on('new-dev', subcribeFunction)
+  socket.on('new-dev', subcribeFunction);
 }
 
 function connect(latitude, longitude, techs) {
@@ -13,14 +13,14 @@ function connect(latitude, longitude, techs) {
     latitude,
     longitude,
     techs,
-  }
-  socket.connect()
+  };
+  socket.connect();
 }
 
 function disconnect() {
   if (socket.connected) {
-    socket.disconnect()
+    socket.disconnect();
   }
 }
 
-export { connect, disconnect, subscribeNewDevs }
+export { connect, disconnect, subscribeNewDevs };
