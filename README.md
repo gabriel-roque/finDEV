@@ -14,7 +14,7 @@
 
 
 <p align="center">
-   <a href="https://findev.netlify.app/" target="_blank"><img src="https://raw.githubusercontent.com/gabriel-roque/design/master/btn-open-app.png" width="200"></a>
+   <a href="https://findev.netlify.app/"><img src="https://raw.githubusercontent.com/gabriel-roque/design/master/btn-open-app.png" width="200"></a>
     <a href="https://github.com/gabriel-roque/finDEV-api"><img src="https://raw.githubusercontent.com/gabriel-roque/design/master/btn-back-end.png" width="200"></a>
   <a href="https://github.com/gabriel-roque/finDEV-app"><img src="https://raw.githubusercontent.com/gabriel-roque/design/master/btn-mobile.png" width="200"></a>
 </p>
