@@ -3,7 +3,7 @@ import { View, Text, TextInput, Button, TouchableOpacity } from 'react-native';
 import { styles } from './styles';
 import {
   requestPermissionsAsync,
-  getCurrentPositionAsync
+  getCurrentPositionAsync,
 } from 'expo-location';
 import { registerDev } from '../../services/actions';
 
@@ -12,7 +12,7 @@ export default function Register() {
   const [techs, setTechs] = useState('');
   const [currentRegion, setCurrentRegion] = useState({
     latitude: '',
-    longitude: ''
+    longitude: '',
   });
 
   async function loadInitialPosition() {
@@ -20,7 +20,7 @@ export default function Register() {
 
     if (granted) {
       const { coords } = await getCurrentPositionAsync({
-        enableHighAccuracy: true
+        enableHighAccuracy: true,
       });
 
       const { latitude, longitude } = coords;
@@ -29,7 +29,7 @@ export default function Register() {
         latitude,
         longitude,
         latitudeDelta: 0.04,
-        longitudeDelta: 0.04
+        longitudeDelta: 0.04,
       });
     }
   }
@@ -43,7 +43,7 @@ export default function Register() {
       github_username: username,
       techs,
       latitude: currentRegion.latitude,
-      longitude: currentRegion.longitude
+      longitude: currentRegion.longitude,
     };
     registerDev(data);
   };

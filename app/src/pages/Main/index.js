@@ -1,11 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { Image, View, Text, TextInput, TouchableOpacity } from 'react-native';
+import {
+  Image,
+  View,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  Button,
+} from 'react-native';
 import { styles } from './styles';
 
 import MapView, { Marker, Callout } from 'react-native-maps';
 import {
   requestPermissionsAsync,
-  getCurrentPositionAsync
+  getCurrentPositionAsync,
 } from 'expo-location';
 import { MaterialIcons } from '@expo/vector-icons';
 
@@ -23,7 +30,7 @@ export default function Main({ navigation }) {
 
       if (granted) {
         const { coords } = await getCurrentPositionAsync({
-          enableHighAccuracy: true
+          enableHighAccuracy: true,
         });
 
         const { latitude, longitude } = coords;
@@ -32,7 +39,7 @@ export default function Main({ navigation }) {
           latitude,
           longitude,
           latitudeDelta: 0.04,
-          longitudeDelta: 0.04
+          longitudeDelta: 0.04,
         });
       }
     }
@@ -40,7 +47,7 @@ export default function Main({ navigation }) {
   }, []);
 
   useEffect(() => {
-    subscribeNewDevs(dev => setDevs([...devs, dev]));
+    subscribeNewDevs((dev) => setDevs([...devs, dev]));
   }, [devs]);
 
   function setupWebsocket() {
@@ -58,8 +65,8 @@ export default function Main({ navigation }) {
       params: {
         latitude,
         longitude,
-        techs
-      }
+        techs,
+      },
     });
 
     setDevs(response.data.devs);
@@ -81,25 +88,25 @@ export default function Main({ navigation }) {
         initialRegion={currentRegion}
         style={styles.map}
       >
-        {devs.map(dev => (
+        {devs.map((dev) => (
           <Marker
             key={dev._id}
             coordinate={{
               longitude: dev.location.coordinates[0],
-              latitude: dev.location.coordinates[1]
+              latitude: dev.location.coordinates[1],
             }}
           >
             <Image
               style={styles.avatar}
               source={{
-                uri: dev.avatar_url
+                uri: dev.avatar_url,
               }}
             />
             <Callout
               onPress={() => {
                 // React navigation
                 navigation.navigate('Profile', {
-                  github_username: dev.github_username
+                  github_username: dev.github_username,
                 });
               }}
             >
