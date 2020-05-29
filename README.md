@@ -1,7 +1,7 @@
 <span id="top"></span>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/gabriel-roque/design/master/social-banner-findev.jpg" width="600"/>
+  <img src="https://raw.githubusercontent.com/gabriel-roque/design/master/social-banner-findev.jpg" width="700"/>
 </p>
 
 <p align="center">
