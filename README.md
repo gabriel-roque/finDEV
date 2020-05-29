@@ -48,8 +48,12 @@ $ npm start
 ## 👤 Authors
 
 <p align="center">
-  <img src="https://github.com/gabriel-roque/design/blob/master/banner-contato-left.png?raw=true" width="400">
-  <img src="https://github.com/gabriel-roque/design/blob/master/banner-contato-right.png?raw=true" width="343">
+  <a href="https://www.linkedin.com/in/gabriel-roque/">
+    <img src="https://github.com/gabriel-roque/design/blob/master/banner-contato-left.png?raw=true" width="400">
+  </a>
+  <a href="https://github.com/gabriel-roque">
+    <img src="https://github.com/gabriel-roque/design/blob/master/banner-contato-right.png?raw=true" width="343">
+  </a>
 </p>
 
 ## 🤝 Contributing
