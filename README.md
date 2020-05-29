@@ -47,7 +47,7 @@ $ npm start
 
 ## 👤 Authors
 
-<p align="left">
+<p align="center">
   <img src="https://github.com/gabriel-roque/design/blob/master/banner-contato-left.png?raw=true" width="400">
   <img src="https://github.com/gabriel-roque/design/blob/master/banner-contato-right.png?raw=true" width="343">
 </p>
