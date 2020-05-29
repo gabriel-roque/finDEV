@@ -47,11 +47,10 @@ $ npm start
 
 ## 👤 Authors
 
-| Gabriel Roque                                                                       |
-| ----------------------------------------------------------------------------------- |
-| <img src="https://avatars2.githubusercontent.com/u/32438220?s=460&v=4" width="110"> |
-| <a href="https://github.com/gabriel-roque">Github</a>                               |
-| <a href="https://www.linkedin.com/in/gabriel-roque/">Linkedin</a>                   |
+<p align="left">
+  <img src="https://github.com/gabriel-roque/design/blob/master/banner-contato-left.png?raw=true" width="400">
+  <img src="https://github.com/gabriel-roque/design/blob/master/banner-contato-right.png?raw=true" width="343">
+</p>
 
 ## 🤝 Contributing
 
